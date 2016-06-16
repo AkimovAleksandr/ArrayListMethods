@@ -99,8 +99,12 @@ public class ArrayListMethods {
         
         myArrayList.addAll(myArrayList3);
         System.out.println(myArrayList); 
+       
         
-      //?  myArrayList.replaceAll();
+       MyOperator<String> operator = new MyOperator<>();
+       operator.varc1 = "вставка";
+      myArrayList.replaceAll(operator);
+      System.out.println(myArrayList); 
       
       myArrayList.add(2,"blablabla");
       System.out.println(myArrayList); 
